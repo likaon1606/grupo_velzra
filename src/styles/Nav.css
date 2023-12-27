@@ -1,0 +1,36 @@
+.nav,
+.info {
+  display: flex;
+  justify-content: center;
+}
+
+.menu,
+.contact1 {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav li,
+.info li {
+  padding: 5px;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  color: #f2f2f2;
+}
+
+.nav li:hover {
+  color: gray;
+}
+
+.icons {
+  width: 30px;
+}
+
+.icons:hover {
+  scale: 1.1;
+}
