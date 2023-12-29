@@ -44,10 +44,10 @@ ul {
   width: 160px;
 }
 
-.nav li,
-.info li {
+.menu-li a {
   font-weight: 600;
   font-size: 20px;
+  text-decoration: none;
   cursor: pointer;
   color: #f2f2f2;
 }
@@ -56,10 +56,14 @@ ul {
   margin-left: 100px;
 }
 
-.nav li:hover {
+.menu-li a:hover {
   color: gray;
 }
 
 .icons:hover {
   scale: 1.1;
+}
+
+.menu-li a.active {
+  color: gray;
 }
