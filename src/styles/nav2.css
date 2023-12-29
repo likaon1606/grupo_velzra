@@ -1,0 +1,146 @@
+.navbar {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  background-image: url("../../public/assets/barra_gris.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav_logo img {
+  width: 35%;
+}
+
+.nav_items a {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 15px;
+  color: white;
+  position: relative;
+  text-decoration: none;
+  justify-content: end;
+}
+
+.animated-line {
+  background-image: linear-gradient(90deg, #e2e2e2, #999898, #404040);
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  background-position: left bottom;
+  transition: background-size 300ms ease-in-out;
+}
+
+.animated-line:hover {
+  background-size: 100% 3px;
+  color: gray;
+}
+
+.nav_toggle {
+  display: none;
+}
+
+.sci a::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-140%, calc(-50% + 0px));
+  font-size: 3vw;
+  pointer-events: none;
+  font-weight: 700;
+  transition: 0.5s;
+  opacity: 0;
+}
+.sci a:hover::before {
+  opacity: 0.4;
+  transform: translate(-140%, calc(-50% + 0px));
+}
+
+.sci a .fa {
+  transition: 0.25s;
+  pointer-events: none;
+}
+
+.animated-line.active {
+  color: gray;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    position: static;
+  }
+
+  .nav_logo {
+    text-align: center;
+  }
+
+  .nav_logo img {
+    width: 40%;
+  }
+
+  .nav_items {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto; /*-webkit-fill-available*/
+    transform: translateX(-100%);
+    transition: 0.3s ease all;
+    z-index: 4;
+  }
+
+  .nav_items.open {
+    transform: translateX(0) !important;
+  }
+
+  .nav_items a {
+    color: whitesmoke;
+    font-weight: 700;
+  }
+
+  .nav_toggle {
+    display: flex !important;
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  .nav_toggle span {
+    width: 30px;
+    height: 4px;
+    background: white;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transform-origin: 5px 0px;
+    transition: all 0.2s linear;
+  }
+
+  .nav_toggle.open > span {
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+
+  .nav_toggle.open > span:nth-child(2) {
+    display: none;
+  }
+
+  .nav_toggle.open > span:nth-child(3) {
+    transform: rotate(-45deg) translate(-5px, 1px);
+  }
+
+  .animated-line {
+    background-image: none;
+  }
+
+  .animated-line:hover {
+    color: #373535;
+  }
+
+  .sci a::before {
+    content: none;
+  }
+
+  .animated-line.active {
+    color: black;
+  }
+}

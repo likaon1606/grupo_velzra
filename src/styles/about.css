@@ -14,7 +14,7 @@
 }
 
 .container-body {
-  background-image: url('../../public/assets/fondo1.png');
+  background-image: url("../../public/assets/fondo1.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
