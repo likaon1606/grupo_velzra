@@ -1,12 +1,10 @@
-import React from 'react';
-import { Nav } from 'react-bootstrap';
-import About from './About';
+import React from "react";
+import About from "./About";
 
 const Home = () => {
   return (
     <>
-     <Nav />
-     <About />
+      <About />
     </>
   );
 };
