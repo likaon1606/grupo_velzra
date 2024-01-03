@@ -1,19 +1,23 @@
-import React, { useState, useEffect } from "react";
-import "../../../public/assets/PPG.png"; // Importa tus imágenes
-import "../../../public/assets/TRUPER.png";
-import "../../../public/assets/MEZCLA.png";
-import "../../../public/assets/PLAKA.png";
-import "../../styles/imageCarousel.css"; // Importa tu archivo de estilos CSS
+import React, { useState, useEffect, useMemo } from "react";
+import "/assets/PPG.png";
+import "/assets/TRUPER.png";
+import "/assets/MEZCLA.png";
+import "/assets/PLAKA.png";
+
+import "../../styles/imageCarousel.css";
 
 const ImageCarousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const certifications = [
-    { url: "/assets/PPG.png" },
-    { url: "/assets/TRUPER.png" },
-    { url: "/assets/MEZCLA.png" },
-    { url: "/assets/PLAKA.png" },
-  ];
+  const certifications = useMemo(
+    () => [
+      { url: "/assets/PPG.png" },
+      { url: "/assets/TRUPER.png" },
+      { url: "/assets/MEZCLA.png" },
+      { url: "/assets/PLAKA.png" },
+    ],
+    []
+  );
 
   useEffect(() => {
     const interval = setInterval(() => {

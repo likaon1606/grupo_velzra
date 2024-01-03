@@ -64,6 +64,53 @@
   color: gray;
 }
 
+.nav_items {
+  display: flex;
+  align-items: center;
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu-content {
+  display: none;
+  position: absolute;
+  background-color: gray;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.submenu:hover .submenu-content {
+  display: block;
+}
+
+.submenu-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+.submenu-content a:hover {
+  color: gray;
+}
+
+.arrow-icon {
+  width: 18px;
+  padding: 3px;
+  transform: rotate(180deg);
+  background-color: gray;
+  border-radius: 5px;
+}
+
+.arrow-icon:hover {
+  transform: none;
+}
+
 @media only screen and (max-width: 768px) {
   .menu {
     position: static;
