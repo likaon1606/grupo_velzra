@@ -80,6 +80,7 @@
   width: 100%;
   margin: 0 auto;
   border-radius: 10px;
+  z-index: 99;
 }
 
 .submenu:hover .submenu-content {

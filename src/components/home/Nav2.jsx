@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-
 import "../../styles/nav2.css";
-
 import logo from "/assets/logo.png";
 import arrowIcon from "/assets/flecha.png";
 
@@ -11,6 +9,14 @@ const Nav2 = () => {
 
   const toggleSubMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleMouseEnter = () => {
+    setIsOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsOpen(false);
   };
 
   return (
@@ -28,7 +34,11 @@ const Nav2 = () => {
           >
             INICIO
           </NavLink>
-          <div className="submenu">
+          <div
+            className="submenu"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
             <NavLink to="/modelodenegocio" className="animated-line">
               MODELO DE NEGOCIO
             </NavLink>
