@@ -11,7 +11,7 @@ h1 {
 
 .title-service {
   display: flex;
-  align-items: center; /* Alinea verticalmente los elementos */
+  align-items: center;
   margin-bottom: 20px;
   justify-content: center;
 }
@@ -24,7 +24,7 @@ h1 {
 }
 
 .title-service .img-punto {
-  margin-top: 15px; /* Ajusta el espacio para alinear con h1 verticalmente */
+  margin-top: 15px;
 }
 
 .section-service {
