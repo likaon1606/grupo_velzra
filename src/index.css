@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Montserrat';
-  src: url(./Montserrat/static/Montserrat-Regular.ttf);
+  font-family: "Quick";
+  src: url(./Quicksand/Quicksand-Medium.ttf);
 }
 
 * {
@@ -9,8 +9,13 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Montserrat';
+body,
+a,
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Quick";
 }
 
 a {
