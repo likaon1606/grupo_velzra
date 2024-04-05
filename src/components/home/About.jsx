@@ -67,10 +67,42 @@ const About = () => {
         <img src={sport} alt="sport" />
       </div>
       <div className="image-large">
-        <img src={cons1} alt="cons1" />
-        <img src={cons2} alt="cons2" />
-        <img src={cons3} alt="cons3" />
-        <img src={cons4} alt="cons4" />
+        <div className="flex-img">
+          <img src={cons1} alt="cons1" />
+          <div class="overlay">
+            <div class="overlay-content">
+              <h1>prueba</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+        </div>
+        <div className="flex-img">
+          <img src={cons2} alt="cons2" />
+          <div class="overlay">
+            <div class="overlay-content">
+              <h1>prueba</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+        </div>
+        <div className="flex-img">
+          <img src={cons3} alt="cons3" />
+          <div class="overlay">
+            <div class="overlay-content">
+              <h1>prueba</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+        </div>
+        <div className="flex-img">
+          <img src={cons4} alt="cons4" />
+          <div class="overlay">
+            <div class="overlay-content">
+              <h1>prueba</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
