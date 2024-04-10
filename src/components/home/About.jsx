@@ -10,6 +10,7 @@ import cons1 from "../../assets/cons-1.png";
 import cons2 from "../../assets/cons-2.png";
 import cons3 from "../../assets/cons-3.png";
 import cons4 from "../../assets/cons-4.png";
+import Carousel from "../carousel/Carousel";
 
 const About = () => {
   return (
@@ -104,6 +105,8 @@ const About = () => {
           </div>
         </div>
       </div>
+      <hr></hr>
+      <Carousel />
     </>
   );
 };

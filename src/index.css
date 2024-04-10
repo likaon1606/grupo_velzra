@@ -30,4 +30,11 @@ a {
 
 p {
   font-family: "Quick-light";
+  font-weight: 700;
+}
+
+hr {
+  margin-top: 20px;
+  border: 1px solid #b0b0b0;
+  margin-bottom: 50px;
 }
