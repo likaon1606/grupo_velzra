@@ -143,7 +143,7 @@ svg {
 
   .nav_items {
     position: absolute;
-    top: 100%;
+    top: 90px;
     left: 0;
     background: gray;
     display: flex;
@@ -212,5 +212,15 @@ svg {
     width: 100%;
     position: relative;
     padding: 10px;
+  }
+}
+
+/*
+---------- 425px --------------
+*/
+
+@media only screen and (max-width: 426px) {
+  .nav_items {
+    top: 130px;
   }
 }
