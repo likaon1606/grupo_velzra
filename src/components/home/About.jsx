@@ -72,8 +72,12 @@ const About = () => {
           <img src={cons1} alt="cons1" />
           <div class="overlay">
             <div class="overlay-content">
-              <h1>prueba</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <h1>Construcción Infraestructuras</h1>
+              <p>
+                Contamos con la logística para realizar proyectos fundamentales
+                para el desarrollo de una región, abarcando la construcción de
+                carreteras, puentes, túneles y aeropuertos.
+              </p>
             </div>
           </div>
         </div>
@@ -81,8 +85,11 @@ const About = () => {
           <img src={cons2} alt="cons2" />
           <div class="overlay">
             <div class="overlay-content">
-              <h1>prueba</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <h1>Construcción Residencial</h1>
+              <p>
+                Nos especializamos en la creación de hogares, desde viviendas
+                unifamiliares hasta complejos de apartamentos.
+              </p>
             </div>
           </div>
         </div>
@@ -90,8 +97,12 @@ const About = () => {
           <img src={cons3} alt="cons3" />
           <div class="overlay">
             <div class="overlay-content">
-              <h1>prueba</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <h1>Construcción Industrial</h1>
+              <p>
+                Nos dedicamos a las edificaciones destinadas a servicios
+                públicos y sociales, como escuelas, hospitales y edificios
+                gubernamentales.
+              </p>
             </div>
           </div>
         </div>
@@ -99,14 +110,44 @@ const About = () => {
           <img src={cons4} alt="cons4" />
           <div class="overlay">
             <div class="overlay-content">
-              <h1>prueba</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <h1>Construcción Institucional</h1>
+              <p>
+                Nos dedicamos a las edificaciones destinadas a servicios
+                públicos y sociales, como escuelas, hospitales y edificios
+                gubernamentales
+              </p>
             </div>
           </div>
         </div>
       </div>
       <hr></hr>
       <Carousel />
+      <hr></hr>
+      <div className="history">
+        <h1>Historia</h1>
+        <p>
+          Creada en 1997, Grupo Velzra es una empresa dedicada a la
+          comercialización y construcción.
+        </p>
+        <p>
+          Nuestros fundadores han respaldado el trabajo de la construcción de
+          una manera sólida, rigiéndose por los valores de responsabilidad,
+          honestidad, compromiso, eficiencia y ética; haciendo de Grupo Velzra
+          una empresa rentable y de calidad en sus servicios.
+        </p>
+        <p>
+          Estamos preparados para atender TODOS los requerimientos de nuestros
+          clientes, ofreciendo un SERVICIO INTEGRAL, cumpliendo con las medidas
+          de seguridad y hospitalidad necesarias, para fortalecer nuestras
+          relaciones a largo plazo.
+        </p>
+        <p>
+          {" "}
+          La EVOLUCIÓN constante, nos ha permitido crecer y creer en nuestra
+          empresa, por lo que estamos cien por ciento seguros de nuestro
+          compromiso con nuestros colaboradores y socios comerciales.
+        </p>
+      </div>
     </>
   );
 };

@@ -138,7 +138,7 @@ svg {
   }
 
   .nav_logo img {
-    width: 40%;
+    width: 60%;
   }
 
   .nav_items {
@@ -206,5 +206,11 @@ svg {
 
   .animated-line.active {
     color: black;
+  }
+
+  .icons-social {
+    width: 100%;
+    position: relative;
+    padding: 10px;
   }
 }
