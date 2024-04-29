@@ -167,6 +167,42 @@
   margin-top: 30px;
 }
 
+.container-vimi {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 87%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.container-vimi img {
+  width: 150px;
+}
+
+.mision p,
+.vision p {
+  text-align: justify;
+  line-height: 25px;
+}
+
+.mision p {
+  padding-right: 50px;
+}
+
+.vision p {
+  padding-left: 50px;
+}
+
+.timeline {
+  margin-top: 50px;
+}
+
+.timeline img {
+  width: 100%;
+  height: auto;
+}
+
 /*
 --------- 768px ---------------
 */
@@ -200,6 +236,26 @@
     margin-top: 10%;
     font-size: 14px;
   }
+
+  .container-vimi {
+    display: block;
+  }
+
+  .vision {
+    margin-top: 50px;
+  }
+
+  .mision p {
+    padding-right: 0px;
+  }
+
+  .vision p {
+    padding-left: 0px;
+  }
+
+  .timeline img {
+    height: 150px;
+  }
 }
 
 /*
@@ -223,6 +279,10 @@
 
   .overlay p {
     font-size: 10px;
+  }
+
+  .timeline img {
+    height: 100px;
   }
 }
 
@@ -273,5 +333,9 @@
 
   .overlay {
     display: none;
+  }
+
+  .timeline img {
+    height: 70px;
   }
 }

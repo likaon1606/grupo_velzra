@@ -1,16 +1,20 @@
 import React from "react";
 import "../../styles/about.css";
+import Carousel from "../carousel/Carousel";
+
 import video from "../../assets/velzra.mp4";
 import velzra from "../../assets/velzra.png";
 import siv from "../../assets/siv.png";
 import veltor from "../../assets/veltor.png";
 import sport from "../../assets/sport.png";
-
 import cons1 from "../../assets/cons-1.png";
 import cons2 from "../../assets/cons-2.png";
 import cons3 from "../../assets/cons-3.png";
 import cons4 from "../../assets/cons-4.png";
-import Carousel from "../carousel/Carousel";
+import mision from "../../assets/mision.png";
+import vision from "../../assets/vision.png";
+import timeline from "../../assets/timeline.png";
+import CarouselTop from "../carousel_top/CarouselTop";
 
 const About = () => {
   return (
@@ -148,6 +152,33 @@ const About = () => {
           compromiso con nuestros colaboradores y socios comerciales.
         </p>
       </div>
+      <div className="container-vimi">
+        <div className="mision">
+          <img src={mision} alt="misión" />
+          <p>
+            Nuestra misión es innovar y optimizar los procesos constructivos en
+            proyectos de alto impacto. Como corporativo empresarial, nos
+            dedicamos a ofrecer soluciones vanguardistas que son eficientes
+            desde la planificación hasta la ejecución.
+          </p>
+        </div>
+
+        <div className="vision">
+          <img src={vision} alt="misión" />
+          <p>
+            Evolucionar y convertirnos en un corporativo que ofrezca soporte a
+            proyectos de alta especialidad y genere proyectos inmobiliarios
+            rentables, con el soporte de profesionales, especificadores
+            técnicos, colaboradores capacitados y personal administrativo con
+            altos valores éticos.
+          </p>
+        </div>
+      </div>
+      <div className="timeline">
+        <img src={timeline} alt="timeline" />
+      </div>
+      <hr />
+      <CarouselTop />
     </>
   );
 };
