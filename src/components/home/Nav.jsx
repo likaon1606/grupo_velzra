@@ -1,5 +1,13 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import {
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
+  DropdownToggle,
+} from "reactstrap";
+
 import "../../styles/nav.css";
 import logo from "../../assets/logo.png";
 
@@ -10,12 +18,10 @@ const Nav = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleMouseEnter = () => {
-    setIsOpen(true);
-  };
+  const [dropdown, setDropdown] = useState(false);
 
-  const handleMouseLeave = () => {
-    setIsOpen(false);
+  const openCloseDropdown = () => {
+    setDropdown(!dropdown);
   };
 
   return (
@@ -39,56 +45,28 @@ const Nav = () => {
           >
             Proyectos
           </NavLink>
-          <NavLink to="/marcas" end className="animated-line">
-            Marcas
-          </NavLink>
-          <div
-            className="submenu"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            <span className="arrow-icon" onClick={toggleSubMenu}>
-              <svg
-                version="1.0"
-                xmlns="http://www.w3.org/2000/svg"
-                width="1280.000000pt"
-                height="1120.000000pt"
-                viewBox="0 0 1280.000000 1120.000000"
-                preserveAspectRatio="xMidYMid meet"
-              >
-                <g
-                  transform="translate(0.000000,1120.000000) scale(0.100000,-0.100000)"
-                  fill="#fff"
-                  stroke="none"
-                >
-                  <path
-                    d="M6331 11189 c-161 -31 -383 -145 -449 -229 -20 -26 -1800 -3120
--3502 -6085 -1556 -2712 -2343 -4097 -2363 -4155 -38 -110 -3 -290 86 -450 52
--92 159 -207 224 -240 l48 -25 6030 0 6030 0 46 21 c134 62 264 267 305 482
-34 177 18 236 -131 499 -475 836 -1418 2481 -2477 4323 -2126 3696 -2221 3862
--2723 4740 -270 470 -505 872 -524 893 -44 48 -177 137 -266 177 -123 55 -226
-70 -334 49z"
-                  />
-                </g>
-              </svg>
-            </span>
-            {isOpen && (
-              <div className="submenu-content">
-                <NavLink to="/opcion1" className="animated-line">
-                  PPG
-                </NavLink>
-                <NavLink to="/opcion2" className="animated-line">
-                  CALIDRA
-                </NavLink>
-                <NavLink to="/opcion3" className="animated-line">
-                  MEZCLA BRAVA
-                </NavLink>
-                <NavLink to="/opcion4" className="animated-line">
-                  TRUPER
-                </NavLink>
-              </div>
-            )}
-          </div>
+          <Dropdown isOpen={dropdown} toggle={openCloseDropdown}>
+            <DropdownToggle caret className="drop">
+              <NavLink to="/marcas" end className="animated-line">
+                Marcas
+              </NavLink>
+            </DropdownToggle>
+
+            <DropdownMenu>
+              <NavLink to="/opcion1" className="animated-line">
+                <DropdownItem>PPG</DropdownItem>
+              </NavLink>
+              <NavLink to="/opcion2" className="animated-line">
+                <DropdownItem>CALINDRA</DropdownItem>
+              </NavLink>
+              <NavLink to="/opcion3" className="animated-line">
+                <DropdownItem>MEZCLA BRAVA</DropdownItem>
+              </NavLink>
+              <NavLink to="/opcion4" className="animated-line">
+                <DropdownItem>TRUPER</DropdownItem>
+              </NavLink>
+            </DropdownMenu>
+          </Dropdown>
         </div>
         <div className="nav_logo">
           <img src={logo} alt="logo" />

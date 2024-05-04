@@ -22,6 +22,21 @@
   text-decoration: none;
 }
 
+.dropdown-toggle {
+  background: none;
+  border: none;
+  font-size: 18px;
+}
+
+.dropdown-toggle:hover {
+  background: none;
+  color: #2db6fa;
+}
+
+.drop::after {
+  color: #2db6fa;
+}
+
 .animated-line {
   background-image: linear-gradient(90deg, #a9def9, #97dcff, #2db6fa);
   background-repeat: no-repeat;
@@ -134,16 +149,16 @@ svg {
   }
 
   .nav_logo {
-    text-align: center;
+    margin: 0 auto;
   }
 
   .nav_logo img {
-    width: 60%;
+    width: 30%;
   }
 
   .nav_items {
     position: absolute;
-    top: 90px;
+    top: 100%;
     left: 0;
     background: gray;
     display: flex;
@@ -178,6 +193,7 @@ svg {
     border-radius: 2px;
     transform-origin: 5px 0px;
     transition: all 0.2s linear;
+    margin-left: 10px;
   }
 
   .nav_toggle.open > span {
@@ -212,15 +228,5 @@ svg {
     width: 100%;
     position: relative;
     padding: 10px;
-  }
-}
-
-/*
----------- 425px --------------
-*/
-
-@media only screen and (max-width: 426px) {
-  .nav_items {
-    top: 130px;
   }
 }

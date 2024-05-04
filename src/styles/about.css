@@ -183,7 +183,7 @@
 .mision p,
 .vision p {
   text-align: justify;
-  line-height: 25px;
+  font-size: 20px;
 }
 
 .mision p {
@@ -251,6 +251,13 @@
 
   .vision p {
     padding-left: 0px;
+  }
+
+  .mision p,
+  .vision p,
+  .body-p,
+  .history p {
+    font-size: 18px;
   }
 
   .timeline img {
