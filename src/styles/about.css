@@ -4,7 +4,7 @@
 }
 
 .img-port {
-  background-image: url("../assets/portada.png");
+  background-image: url('../assets/portada.png');
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
@@ -71,7 +71,8 @@
 }
 
 .body-p,
-.history {
+.history,
+.p-mid {
   margin: 0 auto;
   margin-top: 30px;
   text-align: justify;
@@ -201,6 +202,69 @@
 .timeline img {
   width: 100%;
   height: auto;
+}
+
+.container-static {
+  width: 87%;
+  height: 430px;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.img-static1 {
+  background-image: url('../assets/Acabados.png');
+}
+.img-static2 {
+  background-image: url('../assets/Impermeabilizantes-.png');
+}
+.img-static3 {
+  background-image: url('../assets/Recubrimientos-Indu.png');
+}
+.img-static4 {
+  background-image: url('../assets/Especialidad-de-pisos.png');
+}
+.img-static5 {
+  background-image: url('../assets/Productos-especializados.png');
+}
+
+.img-static1,
+.img-static2,
+.img-static3,
+.img-static4,
+.img-static5 {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.cont-txt-img {
+  position: relative;
+  text-align: center;
+}
+
+.cont-txt-img h1 {
+  color: #fff;
+  font-size: 80px;
+  padding-top: 5%;
+}
+
+.cont-ul {
+  column-count: 2;
+  column-gap: 20px;
+  margin-top: 5%;
+}
+
+.cont-ul ul {
+  position: relative;
+  margin-left: 25%;
+}
+
+.cont-ul li {
+  color: #fff;
+  text-align: justify;
+  font-size: 22px;
 }
 
 /*

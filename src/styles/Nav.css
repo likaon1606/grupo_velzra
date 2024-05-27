@@ -148,6 +148,11 @@ svg {
     position: static;
   }
 
+  .navbar {
+    justify-content: end;
+    align-items: center;
+  }
+
   .nav_logo {
     margin: 0 auto;
   }
@@ -193,7 +198,6 @@ svg {
     border-radius: 2px;
     transform-origin: 5px 0px;
     transition: all 0.2s linear;
-    margin-left: 10px;
   }
 
   .nav_toggle.open > span {
@@ -228,5 +232,6 @@ svg {
     width: 100%;
     position: relative;
     padding: 10px;
+    text-align: end;
   }
 }
