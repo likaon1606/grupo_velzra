@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "Quick";
+  font-family: 'Quick';
   src: url(./Quicksand/Quicksand-Medium.ttf);
 }
 
 @font-face {
-  font-family: "Quick-light";
+  font-family: 'Quick-light';
   src: url(./Quicksand/Quicksand-Light.ttf);
 }
 
@@ -21,7 +21,7 @@ h2,
 h3,
 h4,
 button {
-  font-family: "Quick";
+  font-family: 'Quick';
 }
 
 a {
@@ -29,7 +29,7 @@ a {
 }
 
 p {
-  font-family: "Quick-light";
+  font-family: 'Quick-light';
   font-weight: 700;
   color: #646467;
 }

@@ -1,0 +1,32 @@
+/* Ajustes generales para las imágenes */
+.carousel .slide img {
+  max-width: 20%;
+  height: 100%;
+}
+
+/* En pantallas pequeñas, se muestra 1 imagen */
+@media only screen and (max-width: 425px) {
+  .carousel .slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* En pantallas medianas, se muestran 2 imágenes */
+@media only screen and (max-width: 768px) {
+  .carousel .slide {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* En pantallas grandes, se muestran 3 imágenes */
+
+.carousel .slide {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+.carousel .carousel-status {
+  display: none; /* Ocultar el estado del carrusel */
+}
