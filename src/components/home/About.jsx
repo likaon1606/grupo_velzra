@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/about.css';
+import './about.css';
 import Carousel from '../carousel/Carousel';
 import CarouselTop from '../carousel_top/CarouselTop';
 import CarouselClients from '../carousel_clients/CarouselClients';

@@ -4,7 +4,7 @@
 }
 
 .img-port {
-  background-image: url('../assets/portada.png');
+  background-image: url('../../assets/portada.png');
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
@@ -218,19 +218,19 @@
 }
 
 .img-static1 {
-  background-image: url('../assets/Acabados.png');
+  background-image: url('../../assets/Acabados.png');
 }
 .img-static2 {
-  background-image: url('../assets/Impermeabilizantes-.png');
+  background-image: url('../../assets/Impermeabilizantes-.png');
 }
 .img-static3 {
-  background-image: url('../assets/Recubrimientos-Indu.png');
+  background-image: url('../../assets/Recubrimientos-Indu.png');
 }
 .img-static4 {
-  background-image: url('../assets/Especialidad-de-pisos.png');
+  background-image: url('../../assets/Especialidad-de-pisos.png');
 }
 .img-static5 {
-  background-image: url('../assets/Productos-especializados.png');
+  background-image: url('../../assets/Productos-especializados.png');
 }
 
 .img-static1,
