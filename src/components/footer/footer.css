@@ -1,0 +1,41 @@
+.footer {
+  background: #f1f1f1;
+  display: flex;
+  justify-content: center;
+}
+
+.containter-icons-footer {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.img-footer img {
+  width: 92px;
+}
+
+.icons-footer {
+  margin-top: 5%;
+}
+
+.icons-footer svg {
+  cursor: pointer;
+  fill: gray;
+  width: 26px;
+  height: 26px;
+  margin: 5px;
+}
+
+.icons-footer svg:hover {
+  fill: #000;
+}
+
+.title-footer {
+  margin-top: 5%;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 426px) {
+  .img-footer img {
+    width: 72px;
+  }
+}

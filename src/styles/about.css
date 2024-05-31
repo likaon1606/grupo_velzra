@@ -273,6 +273,11 @@
   font-size: 22px;
 }
 
+.carousel-clients {
+  width: 100%;
+  margin: 0 auto;
+}
+
 /*
 --------- 768px ---------------
 */
@@ -389,7 +394,8 @@
   .timeline img {
     height: 100px;
   }
-  .cont-txt-img h1 {
+  .cont-txt-img h1,
+  .container-clients h1 {
     font-size: 40px;
   }
 
@@ -463,5 +469,9 @@
 
   .cont-ul li {
     font-size: 12px;
+  }
+
+  .container-clients h1 {
+    font-size: 30px;
   }
 }

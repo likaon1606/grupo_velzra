@@ -300,8 +300,10 @@ const About = () => {
       <hr />
       <div className='container-clients'>
         <h1>Nuestros Clientes</h1>
+        <div className='carousel-clients'>
+          <CarouselClients />
+        </div>
       </div>
-      <CarouselClients />
     </>
   );
 };
