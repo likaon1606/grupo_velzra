@@ -75,8 +75,8 @@ const About = () => {
       <div className='image-large'>
         <div className='flex-img'>
           <img src={cons1} alt='cons1' />
-          <div class='overlay'>
-            <div class='overlay-content'>
+          <div className='overlay'>
+            <div className='overlay-content'>
               <h1>Construcción Infraestructuras</h1>
               <p>
                 Contamos con la logística para realizar proyectos fundamentales
@@ -88,8 +88,8 @@ const About = () => {
         </div>
         <div className='flex-img'>
           <img src={cons2} alt='cons2' />
-          <div class='overlay'>
-            <div class='overlay-content'>
+          <div className='overlay'>
+            <div className='overlay-content'>
               <h1>Construcción Residencial</h1>
               <p>
                 Nos especializamos en la creación de hogares, desde viviendas
@@ -100,8 +100,8 @@ const About = () => {
         </div>
         <div className='flex-img'>
           <img src={cons3} alt='cons3' />
-          <div class='overlay'>
-            <div class='overlay-content'>
+          <div className='overlay'>
+            <div className='overlay-content'>
               <h1>Construcción Industrial</h1>
               <p>
                 Nos dedicamos a las edificaciones destinadas a servicios
@@ -113,8 +113,8 @@ const About = () => {
         </div>
         <div className='flex-img'>
           <img src={cons4} alt='cons4' />
-          <div class='overlay'>
-            <div class='overlay-content'>
+          <div className='overlay'>
+            <div className='overlay-content'>
               <h1>Construcción Institucional</h1>
               <p>
                 Nos dedicamos a las edificaciones destinadas a servicios
