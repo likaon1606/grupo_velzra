@@ -1,0 +1,31 @@
+.container-pop {
+  display: flex;
+  position: fixed;
+  margin: 35% 80%;
+  z-index: 3;
+}
+
+.whats-pop {
+  display: flex;
+  background: #25d366;
+  border-radius: 50px;
+  padding-left: 12px;
+  cursor: pointer;
+}
+
+.whats-pop:hover {
+  transform: scale(1.05);
+}
+
+.whats-pop p {
+  display: flex;
+  width: 220px;
+  color: #000000;
+  font-weight: 900;
+  font-size: 13px;
+  padding-top: 7px;
+}
+
+.whats-pop img {
+  width: 32px;
+}

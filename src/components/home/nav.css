@@ -1,7 +1,12 @@
+.menu {
+  background: #000;
+}
+
 .navbar {
   display: flex;
   justify-content: space-around;
   background: #000;
+  margin: 0;
 }
 
 .nav_items a,
