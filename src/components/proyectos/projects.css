@@ -1,11 +1,101 @@
+.page-container {
+  text-align: center;
+}
+
+.container-map-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 90%; /* Cambia el ancho para que se ajuste mejor en pantallas más pequeñas */
+  margin: 0 auto;
+  margin-top: 7%;
+}
+
 .map-img {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px; /* Ajusta el espacio entre las imágenes según tus necesidades */
+  position: relative;
+  flex: 1 1 calc(33.333% - 10px); /* Flex para pantallas más grandes */
+  box-sizing: border-box;
+  max-width: calc(33.333% - 10px); /* Asegura que no exceda el 33% */
 }
 
 .map-img img {
   width: 100%;
-  height: auto;
+  height: auto; /* Ajusta la altura automáticamente */
+  display: block;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semitransparente */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Matching border radius */
+}
+
+.map-img:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.overlay-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.overlay-content h1,
+.overlay-content p {
+  margin: 0;
+  text-align: justify;
+}
+
+.overlay h1 {
+  font-size: 34px;
+  text-align: center;
+  color: #2db6fa;
+}
+
+.overlay p {
+  margin-top: 7%;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .map-img {
+    flex: 1 1 calc(50% - 10px); /* Flex para pantallas medianas */
+    max-width: calc(50% - 10px);
+  }
+
+  .overlay h1 {
+    font-size: 30px;
+  }
+
+  .overlay p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-img {
+    flex: 1 1 100%; /* Flex para pantallas pequeñas */
+    max-width: 100%;
+  }
+
+  .overlay h1 {
+    font-size: 26px;
+  }
+
+  .overlay p {
+    font-size: 14px;
+  }
 }
