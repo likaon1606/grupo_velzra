@@ -1,0 +1,24 @@
+.image-large_2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 87%;
+  height: 600px;
+  margin: 0 auto;
+  margin-bottom: 15%;
+}
+
+.flex-img_2 {
+  position: relative;
+  width: calc(25% - 10px);
+}
+
+.flex-img_2 img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s;
+}
+
+.flex-img_2 img:hover {
+  transform: scale(1.1);
+}
