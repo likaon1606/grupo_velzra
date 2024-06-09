@@ -54,7 +54,7 @@ const Footer = () => {
           </a>
         </div>
         <div className='title-footer'>
-          <p>© Grupo Velzra 2024. Sitio desarrollado por Ariel F. G.</p>
+          <p>© Grupo Velzra 2024. By Developer Ariel F. G. Cel. 55 3260 4568</p>
         </div>
       </div>
     </div>

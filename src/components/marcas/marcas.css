@@ -1,16 +1,20 @@
+.brads {
+  background: linear-gradient(-40deg, #0988e8, #000f2e);
+}
+
 .image-large_2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 87%;
-  height: 600px;
+  height: auto;
   margin: 0 auto;
-  margin-bottom: 15%;
+  /* margin-bottom: 15%; */
 }
 
 .flex-img_2 {
   position: relative;
-  width: calc(25% - 10px);
+  width: 25%;
 }
 
 .flex-img_2 img {
@@ -21,4 +25,10 @@
 
 .flex-img_2 img:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+  .flex-img_2 {
+    width: 100%;
+  }
 }

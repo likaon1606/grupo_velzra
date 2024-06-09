@@ -52,18 +52,46 @@ const Nav = () => {
               </NavLink>
             </DropdownToggle>
 
-            <DropdownMenu>
-              <NavLink to='/opcion1' className='animated-line'>
-                <DropdownItem>PPG</DropdownItem>
+            <DropdownMenu className='drop-menu'>
+              <NavLink
+                to='https://www.ppg.com/about-ppg/es-MX/'
+                target='__blank'
+              >
+                <DropdownItem className='animated-line'>
+                  <a
+                    href='https://www.ppg.com/about-ppg/es-MX/'
+                    target='__blank'
+                  >
+                    PPG
+                  </a>
+                </DropdownItem>
               </NavLink>
-              <NavLink to='/opcion2' className='animated-line'>
-                <DropdownItem>CALINDRA</DropdownItem>
+              <NavLink
+                to='https://www.calidra.com/es/?gclid=CjwKCAiA44OtBhAOEiwAj4gpOa2xEpbnAGaEJrmRV6FfiawruRcMndcQB1dkvG0G0K5OQMYoVrtbEBoCTRYQAvD_BwE'
+                target='__blank'
+              >
+                <DropdownItem className='animated-line'>
+                  <a
+                    href='https://www.calidra.com/es/?gclid=CjwKCAiA44OtBhAOEiwAj4gpOa2xEpbnAGaEJrmRV6FfiawruRcMndcQB1dkvG0G0K5OQMYoVrtbEBoCTRYQAvD_BwE'
+                    target='__blank'
+                  >
+                    CALINDRA
+                  </a>
+                </DropdownItem>
               </NavLink>
-              <NavLink to='/opcion3' className='animated-line'>
-                <DropdownItem>MEZCLA BRAVA</DropdownItem>
+              <NavLink to='https://mezclabrava.com/#/' target='__blank'>
+                <DropdownItem className='animated-line'>
+                  <a href='https://mezclabrava.com/#/' target='__blank'>
+                    MEZCLA BRAVA
+                  </a>
+                </DropdownItem>
               </NavLink>
-              <NavLink to='/opcion4' className='animated-line'>
-                <DropdownItem>TRUPER</DropdownItem>
+              <NavLink to='https://www.truper.com/' target='__blank'>
+                <DropdownItem className='animated-line'>
+                  <a href='https://www.truper.com/' target='__blank'>
+                    TRUPER
+                  </a>
+                </DropdownItem>
               </NavLink>
             </DropdownMenu>
           </Dropdown>

@@ -1,5 +1,6 @@
 .page-container {
   text-align: center;
+  display: flex;
 }
 
 .container-map-img {
@@ -7,10 +8,10 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  width: 90%; /* Cambia el ancho para que se ajuste mejor en pantallas más pequeñas */
+  width: 90%;
   margin: 0 auto;
-  margin-top: 7%;
   margin-bottom: 5%;
+  padding-top: 10%;
 }
 
 .map-img {
@@ -47,45 +48,13 @@
   cursor: pointer;
 }
 
-.overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj {
+.overlay-content-proj {
   text-align: center;
   padding: 20px;
 }
 
-.overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  h1,
-.overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  overlay-content-proj
-  p {
+.overlay-content-proj h1,
+.overlay-content-proj p {
   margin: 0;
   text-align: justify;
 }

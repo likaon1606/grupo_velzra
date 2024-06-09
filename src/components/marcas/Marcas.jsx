@@ -8,7 +8,7 @@ import img_4 from '../../assets/Marcas3.png';
 
 const Marcas = () => {
   return (
-    <>
+    <div className='brads'>
       {' '}
       <div className='image-large_2'>
         <div className='flex-img_2'>
@@ -24,7 +24,7 @@ const Marcas = () => {
           <img src={img_4} alt='img' />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

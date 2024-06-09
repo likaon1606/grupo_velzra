@@ -36,6 +36,7 @@
 
 @media only screen and (max-width: 426px) {
   .img-footer img {
+    margin-top: 5%;
     width: 72px;
   }
 }

@@ -1,5 +1,8 @@
 .menu {
   background: #000;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
 }
 
 .navbar {
@@ -53,6 +56,7 @@
 .animated-line:hover {
   background-size: 100% 3px;
   color: #2db6fa;
+  background-color: transparent;
 }
 
 .sci a::before {
@@ -79,6 +83,10 @@
 
 .animated-line.active {
   color: #2db6fa;
+}
+
+.drop-menu {
+  background: #000;
 }
 
 .nav_items {
@@ -170,7 +178,7 @@ svg {
     position: absolute;
     top: 100%;
     left: 0;
-    background: gray;
+    background: #000;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -230,7 +238,7 @@ svg {
   }
 
   .animated-line.active {
-    color: black;
+    color: #2db6fa;
   }
 
   .icons-social {
