@@ -36,6 +36,14 @@
   height: 32px;
 }
 
+.a_whats {
+  text-decoration: none;
+}
+
+.a_whats:hover {
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 769px) {
   .whats-pop p {
     display: none;

@@ -1,17 +1,22 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   Dropdown,
   DropdownItem,
   DropdownMenu,
   DropdownToggle,
 } from 'reactstrap';
+import { useTranslation } from 'react-i18next';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './nav.css';
+
 import logo from '../../assets/logo.png';
+import LanguageSelector from '../language/LanguageSelector';
 
 const Nav = () => {
+  const { t } = useTranslation();
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleSubMenu = () => {
@@ -26,6 +31,8 @@ const Nav = () => {
 
   return (
     <div className='menu'>
+      <LanguageSelector />
+
       <div className='navbar'>
         <div className={`nav_items sci ${isOpen && 'open'}`}>
           <NavLink
@@ -34,7 +41,7 @@ const Nav = () => {
             className='fa animated-line'
             onClick={() => setIsOpen(false)}
           >
-            Nosotros
+            {t('Nosotros')}
           </NavLink>
 
           <NavLink
@@ -43,12 +50,12 @@ const Nav = () => {
             className='animated-line'
             onClick={() => setIsOpen(false)}
           >
-            Proyectos
+            {t('Proyectos')}
           </NavLink>
           <Dropdown isOpen={dropdown} toggle={openCloseDropdown}>
             <DropdownToggle caret className='drop'>
               <NavLink to='/marcas' end className='animated-line'>
-                Marcas
+                {t('Marcas')}
               </NavLink>
             </DropdownToggle>
 

@@ -1,7 +1,26 @@
 {
+  "Nosotros": "About",
+  "Proyectos": "Projects",
+  "Marcas": "Brands",
   "Construcción | Acabados | Comercialización": "Construction | Finishes | Commercialization",
-  "Hacemos de tus proyectos, soluciones.": "We make your projects, <br />solutions.",
+  "Hacemos de tus proyectos": "We make your projects",
+  "soluciones": "solutions",
+  "Hacemos de tus proyectos, soluciones.": "We make your projects, <br/>solutions.",
   "CONOCÉNOS": "GET TO KNOW US",
   "¡PROYECTOS LLAVE EN MANO!": "TURNKEY PROJECTS!",
-  "¿Quiénes Somos?": "Who are we?"
+  "¿Quiénes Somos?": "Who are we?",
+  "Somos un grupo empresarial líder en la industria de la construcción con presencia en México y Panamá.": "We are a leading business group in the construction industry with a presence in Mexico and Panama.",
+  "Destacamos en la comercialización de productos y ofrecemos servicios especializados a través de nuestras empresas": "We stand out in the marketing of products and offer specialized services through our companies",
+  "Grupo Industrial Veltor y Soluciones en Acabados Velzra. Recientemente hemos incorporado Sport Marking": "Veltor Industrial Group and Velzra Finishing Solutions. We have recently incorporated Sport Marking",
+  "un servicio especializado en el marcado de líneas para pistas de carrera": "a service specialized in marking lines for race tracks",
+  "Además": "Besides",
+  "somos especialistas en embellecer espacios a través de Velzra Acabados. Nuestra diversificación de servicios refleja nuestro compromiso con la excelencia y la satisfacción integral de las necesidades de nuestros clientes.": "We are specialists in beautifying spaces through Velzra Finishes. Our diversification of services reflects our commitment to excellence and comprehensive satisfaction of the needs of our clients.",
+  "Construcción Infraestructuras": "Infrastructure Construction",
+  "Contamos con la logística para realizar proyectos fundamentales para el desarrollo de una región": "We have the logistics to carry out fundamental projects for the development of a region",
+  "abarcando la construcción de carreteras": "encompassing road construction",
+  "puentes": "bridges",
+  "túneles y aeropuertos": "tunnels and airports",
+  "Construcción Residencial": "Residential Construction",
+  "Nos especializamos en la creación de hogares": "We specialize in creating homes",
+  "desde viviendas unifamiliares hasta complejos de apartamentos.": "from single-family homes to apartment complexes."
 }
