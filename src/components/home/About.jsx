@@ -123,11 +123,13 @@ const About = () => {
           <img src={cons3} alt='cons3' />
           <div className='overlay'>
             <div className='overlay-content'>
-              <h1>Construcción Industrial</h1>
+              <h1>{t('Construcción Industrial')}</h1>
               <p>
-                Nos dedicamos a las edificaciones destinadas a servicios
-                públicos y sociales, como escuelas, hospitales y edificios
-                gubernamentales.
+                {t(
+                  'Nos dedicamos a las edificaciones destinadas a servicios públicos y sociales'
+                )}
+                , {t('como escuelas')},{' '}
+                {t('hospitales y edificios gubernamentales.')}
               </p>
             </div>
           </div>
@@ -136,11 +138,13 @@ const About = () => {
           <img src={cons4} alt='cons4' />
           <div className='overlay'>
             <div className='overlay-content'>
-              <h1>Construcción Institucional</h1>
+              <h1>{t('Construcción Institucional')}</h1>
               <p>
-                Nos dedicamos a las edificaciones destinadas a servicios
-                públicos y sociales, como escuelas, hospitales y edificios
-                gubernamentales
+                {t(
+                  'Nos dedicamos a las edificaciones destinadas a servicios públicos y sociales'
+                )}
+                , {t('como escuelas')},{' '}
+                {t('hospitales y edificios gubernamentales.')}
               </p>
             </div>
           </div>
@@ -150,28 +154,40 @@ const About = () => {
       <Carousel />
       <hr></hr>
       <div className='history'>
-        <h1>Historia</h1>
+        <h1>{t('Historia')}</h1>
         <p>
-          Creada en 1997, Grupo Velzra es una empresa dedicada a la
-          comercialización y construcción.
+          {t('Creada en 1997')},{' '}
+          {t(
+            'Grupo Velzra es una empresa dedicada a la comercialización y construcción.'
+          )}
         </p>
         <p>
-          Nuestros fundadores han respaldado el trabajo de la construcción de
-          una manera sólida, rigiéndose por los valores de responsabilidad,
-          honestidad, compromiso, eficiencia y ética; haciendo de Grupo Velzra
-          una empresa rentable y de calidad en sus servicios.
+          {t(
+            'Nuestros fundadores han respaldado el trabajo de la construcción de una manera sólida'
+          )}
+          , {t('rigiéndose por los valores de responsabilidad')},
+          {t('honestidad')}, {t('compromiso')}, {t('eficiencia y ética')};{' '}
+          {t(
+            'haciendo de Grupo Velzra una empresa rentable y de calidad en sus servicios.'
+          )}
         </p>
         <p>
-          Estamos preparados para atender TODOS los requerimientos de nuestros
-          clientes, ofreciendo un SERVICIO INTEGRAL, cumpliendo con las medidas
-          de seguridad y hospitalidad necesarias, para fortalecer nuestras
-          relaciones a largo plazo.
+          {t(
+            'Estamos preparados para atender TODOS los requerimientos de nuestros clientes'
+          )}
+          , {t('ofreciendo un SERVICIO INTEGRAL')},{' '}
+          {t(
+            'cumpliendo con las medidas de seguridad y hospitalidad necesarias'
+          )}
+          , {t('para fortalecer nuestras relaciones a largo plazo.')}
         </p>
         <p>
           {' '}
-          La EVOLUCIÓN constante, nos ha permitido crecer y creer en nuestra
-          empresa, por lo que estamos cien por ciento seguros de nuestro
-          compromiso con nuestros colaboradores y socios comerciales.
+          {t('La EVOLUCIÓN constante')},{' '}
+          {t('nos ha permitido crecer y creer en nuestra empresa')},{' '}
+          {t(
+            'por lo que estamos cien por ciento seguros de nuestro compromiso con nuestros colaboradores y socios comerciales.'
+          )}
         </p>
       </div>
       <div className='container-vimi'>
